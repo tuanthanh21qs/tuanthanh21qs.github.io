@@ -364,7 +364,9 @@
       };
   </script>
 
-  
+  <!-- 
+    gắn chatwoot vào chat
+   -->
 <script>
   (function(d,t) {
     var BASE_URL="https://app.chatwoot.com";
@@ -381,6 +383,17 @@
     }
   })(document,"script");
 </script>
+
+<!-- 
+  gắn dialogflow
+ -->
+<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger
+  intent="WELCOME"
+  chat-title="BotAgent"
+  agent-id="6f9a4f96-89e0-4814-84e3-0e8867be0234"
+  language-code="vi"
+></df-messenger>
 
   </body>
 </html>
