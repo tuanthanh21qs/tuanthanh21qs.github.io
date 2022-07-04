@@ -2,8 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />  
+    <meta name="viewport" content="width-device-width, initial-scale=1">
     <title>
       Corpvision – Corporate Category Website WordPress Theme – Just another
       W3Layouts free WordPress Demo Sites site
@@ -367,7 +367,7 @@
   <!-- 
     gắn chatwoot vào chat
    -->
-<script>
+<!-- <script>
   (function(d,t) {
     var BASE_URL="https://app.chatwoot.com";
     var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
@@ -382,18 +382,43 @@
       })
     }
   })(document,"script");
-</script>
+</script> -->
 
 <!-- 
   gắn dialogflow
  -->
-<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+
 <df-messenger
   intent="WELCOME"
-  chat-title="BotAgent"
+  chat-title="MGI AGENT"
   agent-id="6f9a4f96-89e0-4814-84e3-0e8867be0234"
+  expand = true
   language-code="vi"
 ></df-messenger>
 
+
+<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1">
+
+  // const dfMessenger = document.querySelector('df-messenger');
+  // dfMessenger.addEventListener('event-type', function (event) {
+  //   // Handle event
+    
+  // });
+  
+//   const dfMessenger = document.querySelector('df-messenger');
+// dfMessenger.addEventListener('event-type', function (event) {
+//   // Handle event
+//   element: {
+//   icon: {
+//     type: ,
+//     color: string
+//   },
+//   text: string,
+//   link: string,
+//   event: EventInput,
+//   payload: {}
+// }
+// });
+  </script>
   </body>
 </html>
