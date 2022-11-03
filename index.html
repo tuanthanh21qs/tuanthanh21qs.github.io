@@ -98,7 +98,17 @@
         </nav>
       </div>
     </header>
-    
+    <div id="fb-root"></div>
+<script async defer src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
+
+<div style="z-index: 1000;" class="fb-video"
+    data-href="https://www.facebook.com/100003897275070/videos/1957319151074642/"
+    data-width="500"
+    data-allowfullscreen="true"
+    data-lazy="true"></div>
+
+
+
     <section class="carousel">
       <div class="carousel__slider">
         <!-- data-ride="carousel" -->
@@ -326,6 +336,9 @@
     <section class="success"></section>
     <section class="review"></section>
     <section class="news"></section>
+ <df-messenger id="AAA" class="AAA" intent="WELCOME" chat-title="MGI AGENT" agent-id="6f9a4f96-89e0-4814-84e3-0e8867be0234" expand="true" language-code="vi" session-id="dfMessenger-73346010" api-uri="https://dialogflow.cloud.google.com/v1/integrations/messenger/webhook"></df-messenger>
+ 
+
     <footer></footer>
 
     <!-- SCRIPT -->
@@ -367,7 +380,7 @@
   <!-- 
     gắn chatwoot vào chat
    -->
-<!-- <script>
+<script>
   (function(d,t) {
     var BASE_URL="https://app.chatwoot.com";
     var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
@@ -382,43 +395,25 @@
       })
     }
   })(document,"script");
-</script> -->
+</script>
 
 <!-- 
   gắn dialogflow
  -->
 
-<df-messenger
-  intent="WELCOME"
-  chat-title="MGI AGENT"
-  agent-id="6f9a4f96-89e0-4814-84e3-0e8867be0234"
-  expand = true
-  language-code="vi"
-></df-messenger>
 
 
 <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1">
 
-  // const dfMessenger = document.querySelector('df-messenger');
-  // dfMessenger.addEventListener('event-type', function (event) {
-  //   // Handle event
-    
-  // });
-  
-//   const dfMessenger = document.querySelector('df-messenger');
-// dfMessenger.addEventListener('event-type', function (event) {
-//   // Handle event
-//   element: {
-//   icon: {
-//     type: ,
-//     color: string
-//   },
-//   text: string,
-//   link: string,
-//   event: EventInput,
-//   payload: {}
-// }
-// });
+
   </script>
+
+
+
+<script>
+console.log(document.getElementById("messageList"))
+</script>
+
   </body>
 </html>
+
